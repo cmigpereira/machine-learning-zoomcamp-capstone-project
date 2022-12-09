@@ -1,0 +1,11 @@
+service: "predict.py:svc"
+labels:
+  owner: cpereira
+  project: wine
+include:
+- "predict.py"
+python:
+  packages:
+    - numpy==1.22.3
+    - pandas==1.4.1
+    - scikit-learn==1.0.2
